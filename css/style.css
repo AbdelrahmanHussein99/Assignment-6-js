@@ -1,0 +1,118 @@
+/* global style =================================== */
+:root {
+  --ff-primary: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 500;
+}
+
+
+h1 {
+  font-weight: 800;
+}
+
+/* navbar =================================== */
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.show {
+  color: white;
+  font-size: 22px;
+  transition: color 400ms;
+}
+
+.navbar-nav .nav-link:hover {
+  color: gray;
+}
+
+/* 170.438 */
+nav {
+  height: 100%;
+  position: fixed;
+  left: -170.438px;
+  z-index: 9999;
+
+}
+
+#closeBtn {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  border: none;
+
+}
+
+#box {
+  cursor: pointer;
+}
+
+/* header =================================== */
+header {
+  background-image: linear-gradient(rgba(255, 107, 107, 0.5), rgba(255, 107, 107, 0.4)), url(../imgs/11557.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+/* slider =================================== */
+.singer {
+  cursor: pointer;
+}
+
+.innerText {
+  display: none;
+}
+
+.innerText.one {
+  display: block;
+
+}
+
+/* count down date =================================== */
+#duration {
+  background-image: linear-gradient(rgba(255, 107, 107, 0.5), rgba(255, 107, 107, 0.4)), url(../imgs/clock.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.date {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.date p:nth-child(1) {
+  border-bottom: 1px solid white;
+}
+
+/* contact=================================== */
+.icons li {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 200ms;
+}
+
+.icons li:hover {
+  background-color: #fb4c53;
+}
+
+.icons li:hover i {
+  color: white;
+}
+
+.icons li i {
+  transition: color 200ms;
+}
