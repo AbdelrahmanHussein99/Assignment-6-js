@@ -17,6 +17,7 @@ h1 {
 .navbar-nav .nav-link,
 .navbar-nav .nav-link.show {
   color: white;
+  cursor: pointer;
   font-size: 22px;
   transition: color 400ms;
 }
